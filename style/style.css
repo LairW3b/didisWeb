@@ -1,0 +1,155 @@
+:root {
+  --primary: #ff7b25;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  box-sizing: border-box;
+  border: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+*,
+*:before *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  height: 18rem;
+  background-image: linear-gradient(120deg, rgba(23, 23, 24, 0.663) 7%, rgba(212, 113, 37, 0.704) 76%, rgba(191, 132, 95, 0.465) 100%), url(../img/didi-conductor-app.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.header h1 {
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.header p {
+  margin: 0;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 5rem;
+}
+
+/* Header PC */
+@media (min-width: 768px) {
+  .header {
+    height: 30rem;
+  }
+
+  .header p {
+    font-size: 3rem;
+    padding-top: 10rem;
+  }
+
+  .header h1 { 
+    font-size: 7rem ;
+  }
+}
+
+.section_info {
+  background-color: rgba(250, 235, 215, 0.208);
+}
+
+.section_div {
+  text-align: center;
+  margin: 1rem;
+}
+
+.section_div h2 { 
+  margin-bottom: 1rem;
+}
+
+.requisitos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.requisitos h2 {
+  text-align: center;
+} 
+
+.requisitos ul li {
+  margin-top: .3rem;
+  font-size: 1.5rem;
+}
+
+.requisitos ul li span {
+  color: gray;
+}
+
+@media (min-width: 768px) {
+  .section_div h2 {
+    font-size: 3rem;
+    padding-top: 2rem;
+  }
+
+  .section_div h3 { 
+    font-size: 2rem;
+    margin: 3rem;
+  }
+
+  .requisitos ul li {
+    font-size: 2rem;
+    margin: 1rem;
+  }
+
+}
+
+.footer {
+  height: 9rem;
+  background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .footer_icon {
+  width: 4rem;
+  padding: 1rem;
+  font-size: 4rem;
+} */
+.material-symbols-outlined {
+  color: white;
+  width: 5rem;
+  font-size: 4rem;
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.footer a {
+  /* text-decoration: none; */ 
+  font-size: 3rem;
+  color: white;
+}
+
